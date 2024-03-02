@@ -1,0 +1,45 @@
+.table{
+    display: table;
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.tableRow{
+    display: table-row;
+    height: 90px;
+}
+.tableCell{
+    display: table-cell;
+    width: 20%;
+}
+.productDisplay{
+    display: flex;
+    flex-direction: column;
+}
+.productRow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.productRowAdjust{
+    width: 100%;
+    display: flex;
+    flex-shrink: 3;
+}
+.productDetail{
+    border: rgb(201, 232, 235) 4px solid;
+    background-color: white;
+    float: left;
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+}
+.productImage{
+    height: 180;
+    width: 80%;
+}
+p{
+    height: 5px;
+}
