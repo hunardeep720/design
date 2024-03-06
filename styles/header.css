@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(201, 232, 235);
+  background-color: white;
 }
 header {
   margin: -10px;
@@ -8,7 +8,7 @@ header {
 #header{
   display: flex;
   flex-direction: row;
-  background-color: #671833;
+  background-color: #D76F30;
   height: 90px;
   width: 100%;
   flex-shrink: 3;
@@ -66,16 +66,16 @@ input[type=search]{
     width: 45px;
 }
 .header2{
-    background-color: #163e35; 
+    background-color: #6BB77B; 
     height: 40px;
 }
 button{
     height: 40px;
-    background-color: #163e35; 
+    background-color: #6BB77B; 
     border: 0px;
 }
 button:hover{
-    background-color: #ad6a6c;
+    background-color: #FECD45;
 }
 input::placeholder {
     color: black;
@@ -85,7 +85,7 @@ input::content{
     margin-left:15px;
 }
 footer{
-    background-color: #671833;
+    background-color: #D76F30;
     text-align: center;
     justify-content: center;
     height: 45px;
