@@ -3,292 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles\header.css" />
-    <link rel="stylesheet" href="styles\home.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/home.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <div id="header">
-        <div id="header1">
-          <img
-            id="logo"
-            src="images\modern-company-logo-design-vector.jpg"
-            alt="logo"
-          />
-          <h4 id="textLogo">Logo</h4>
+  <body style="margin: 0">
+    <div style="position: relative; display: block">
+      <header id="head">
+        <div id="head1">
+          <div class="name"><span>A To Z</span></div>
+          <div class="input">
+            <input
+              id="input"
+              type="search"
+              placeholder="Search products here"
+            />
+          </div>
+          <div id="shopping">
+            <div style="padding-right: 20px">
+              <button
+                style="background-color: rgba(47, 122, 133, 0)"
+                class="button btn btn-lg btn-active btn-ghost"
+              >
+                Account
+              </button>
+            </div>
+            <div>
+              <button
+                style="background-color: rgba(47, 122, 133, 0)"
+                class="button btn btn-lg btn-active btn-ghost"
+              >
+                Cart
+              </button>
+            </div>
+          </div>
         </div>
-        <div id="header2">
-          <input type="text" placeholder="Search" id="search" />
+        <div>
+          <div>
+            <div style="display: flex; flex-direction: row">
+              <div class="extra-button" style="justify-content: start">
+                <button
+                  style="background-color: rgba(47, 122, 133, 0)"
+                  class="button btn btn-active btn-ghost"
+                >
+                  Store Locator
+                </button>
+                <button
+                  style="background-color: rgba(47, 122, 133, 0)"
+                  class="button btn btn-active btn-ghost"
+                >
+                  Track Order
+                </button>
+              </div>
+              <div class="extra-button" style="justify-content: end">
+                <button
+                  style="background-color: rgba(47, 122, 133, 0)"
+                  class="button btn btn-active btn-ghost"
+                >
+                  Help
+                </button>
+                <button
+                  style="background-color: rgba(47, 122, 133, 0)"
+                  class="button btn btn-active btn-ghost"
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="header3">
-          <button id="accountButton">Account</button>
-          <img
-            src="images\176-1764510_shopping-cart-shopping-icon-png-image-shopping-cart.png"
-            alt="cart"
-            id="shoppingCart"
-          />
+      </header>
+      <div class="back1">
+        <div style="height: 25%"></div>
+        <div class="imgtext" style="height: 50%; width: 60%">
+          <div>
+            <div>
+              <span
+                style="font-family: cursive; font-size: 78px; color: #13219f"
+                >Raining Offers For Hot Summer!</span
+              >
+            </div>
+            <div><span class="covertext">25% Off On All Products</span></div>
+            <div class="coverbutton">
+              <button class="btn btn-warning">Shop Now</button>
+              <button class="btn btn-success">View More</button>
+            </div>
+          </div>
+        </div>
+        <div style="height: 25%"></div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          padding-top: 70px;
+          background-color: white;
+        "
+      >
+        <div style="width: 80%">
+          <div class="carousel carousel-end rounded-box">
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="images\R (1).png"
+                alt="Addidas"
+              />
+            </div>
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="images\C-17077__16050.jpg"
+                alt="Reebok"
+              />
+            </div>
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="images\mark.jpeg"
+                alt="Drink"
+              />
+            </div>
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="images\R3.png"
+                alt="Drink"
+              />
+            </div>
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+                alt="Drink"
+              />
+            </div>
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+                alt="Drink"
+              />
+            </div>
+            <div style="padding-right: 40px" class="carousel-item">
+              <img
+                style="width: 260px; height: 180px"
+                src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+                alt="Drink"
+              />
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: row; flex-shrink: 3">
+            <div class="firstimage icon">
+              <div style="height: 40%"></div>
+              <div style="height: 30%" class="textcenter">
+                <span style="font-size: 52px" class="imagetext"
+                  >20% Off On Tank Tops</span
+                >
+              </div>
+              <div style="height: 10%" class="textcenter">
+                <span class="imagetext"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Proin ac dictum.</span
+                >
+              </div>
+              <div style="margin-left: 142px">
+                <button class="btn btn-warning imagetext">Shop Now</button>
+              </div>
+            </div>
+            <div class="icon secondimage">
+              <div style="height: 40%"></div>
+              <div style="height: 30%" class="textcenter">
+                <span style="font-size: 52px" class="imagetext"
+                  >Latest Eyewear For You</span
+                >
+              </div>
+              <div style="height: 10%" class="textcenter">
+                <span class="imagetext"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Proin ac dictum.</span
+                >
+              </div>
+              <div style="margin-left: 142px">
+                <button class="btn btn-warning imagetext">Shop Now</button>
+              </div>
+            </div>
+            <div class="icon thirdimage">
+              <div style="height: 40%"></div>
+              <div style="height: 30%" class="textcenter">
+                <span style="font-size: 52px" class="imagetext"
+                  >Let's Lorem Suit Up!</span
+                >
+              </div>
+              <div style="height: 10%" class="textcenter">
+                <span class="imagetext"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Proin ac dictum.</span
+                >
+              </div>
+              <div style="margin-left: 142px">
+                <button class="btn btn-warning imagetext">Shop Now</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="header2">
-        <button class="headerButton">Other buttons</button>
-      </div>
-    </header>
-    <div class="productRow">
-      <div class="productRowAdjust">
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\th.jpeg"
-                alt="product name"
-              />
+      <div style="background-color: rgb(229, 244, 245)">
+        <div class="textcenter" style="padding: 60px">
+          <div style="width: 100%">
+            <div>
+              <span style="font-size: 52px; color: black"
+                >Featured Products</span
+              >
             </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\lays.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\desktop.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
+            <div>
+              <div style="padding-top: 80px" class="grid grid-cols-4 gap-4">
+                <div>
+                  <div class="textcenter">
+                    <img
+                      style="width: 248px; height: 248px"
+                      src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-400x400.jpg"
+                      alt="Addidas"
+                    />
+                  </div>
+                  <div>
+                    <span style="color: black" class="font-bold">DNK Yellow Shoes</span>
+                  </div>
+                  <div>
+                    <span style="color: black">Men</span>
+                  </div>
+                  <div>
+                    <div class="rating" >
+                      <input type="radio" style="display: flex;" name="rating-1" class="mask mask-star" />
+                      <input type="radio" style="display: flex;" name="rating-1" class="mask mask-star" checked />
+                      <input type="radio" style="display: flex;" name="rating-1" class="mask mask-star" />
+                      <input type="radio" style="display: flex;" name="rating-1" class="mask mask-star" />
+                      <input type="radio" style="display: flex;" name="rating-1" class="mask mask-star" />
+                    </div>
+                  </div>
+                  <div>
+                    <span style="color: black" class="font-semibold">Price: $200</span>
+                  </div>
+                </div>
+
+                <div>09</div>
+                <div>01</div>
+                <div>01</div>
+              </div>
             </div>
           </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\New_Product.png"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\th.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
-    <div class="productRow">
-      <div class="productRowAdjust">
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\th.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\lays.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\desktop.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\New_Product.png"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\th.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="productRow">
-      <div class="productRowAdjust">
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\th.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\lays.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\desktop.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\New_Product.png"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-        <a class="ancher" href="pages/description.html">
-          <div class="productDetail" style="width: 100%;">
-            <div height="70%">
-              <img
-                class="productImage"
-                src="images\th.jpeg"
-                alt="product name"
-              />
-            </div>
-            <div height="30%">
-              <h7><strong>Name</strong> </h7>
-              <p>Product Description</p>
-              <p>Price</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <footer>
-      <p>Logo icons created by <a href="https://th.bing.com/th/id/R.68f8e9ca937cca27da8128b8ae6d3fa2?rik=KkIva1JQIDXAgQ&pid=ImgRaw&r=0" title="logo icons">Freepik - Flaticon</a></p>
-      <p>Photo by <a href="https://unsplash.com/photos/NE0XGVKTmcA">Karsten Winegeart</a> on unsplash</p>
-  </footer>
   </body>
 </html>

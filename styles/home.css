@@ -1,39 +1,224 @@
-.productDisplay {
+#page {
+  position: relative;
+  display: block;
+}
+#head {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 90;
+  background-color: rgba(47, 122, 133, 0.5);
+  font-family: Arial, sans-serif;
 }
-.productRow {
+.back1 {
+  position: relative;
+  background-image: url("../images/bike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 700px;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.imagetext{
+  position: absolute;
+    color: white;
+    z-index: 4;
+}
+.textcenter{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.thirdimage {
+  background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/footwear-free-img.jpg");
+  background-position: center right;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin-top: 90px;
+  width: 33.332%;
+  border: 1px solid black;
+}
+.secondimage {
+  background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/men-fashion-free-img.jpg");
+  background-position: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.firstimage {
+  background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/women-fashion-free-img.jpg");
+  background-position: top right;
+}
+.button {
+  color: black;
+}
+.coverbuttonspan {
+  height: 50px;
+  width: 138px;
+}
+.coverbuttoncolor {
+  background-color: rgba(255, 255, 100, 12);
+}
+.covertext {
+  font-size: 40px;
+  color: blue;
+  margin-left: 54px;
+}
+.coverbutton {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.imgtext {
+  justify-content: center;
+  text-align: center;
+}
+button:hover,
+#button:hover {
+  background-color: #378e7f;
+}
+.extra-button {
+  display: flex;
+  width: 50%;
+}
+.back1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2f7a85;
+  opacity: 0.5;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 1.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+}
+
+#slide-1 {
+  background-color: #ffcccc;
+}
+#slide-2 {
+  background-color: #ccffcc;
+}
+#slide-3 {
+  background-color: #ccccff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.slideitem {
+  width: 80%;
+  height: 130px;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* padding-left: 84px; */
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3) {
+  background-color: black;
+}
+
+.name {
+  padding-left: 25px;
+  width: 25%;
+  font-size: 50px;
+  color: #000000;
+  text-align: left;
+  font-weight: bold;
+}
+#button {
+  background-color: #1cc9ac;
+  height: 50px;
+  width: 120px;
+  border-radius: 40px 40px 0px 40px;
+}
+.input {
+  padding-top: 5px;
+  width: 50%;
+  background: none;
+}
+input[type="search"] {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+input::placeholder {
+  color: black;
+  text-align: center;
+}
+#input {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 40px 40px 0px 40px;
+  padding-left: 15px;
+}
+#head1 {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.productRowAdjust {
   width: 100%;
-  display: flex;
-  flex-shrink: 3;
 }
-.productDetail {
-  border: rgb(201, 232, 235) 4px solid;
-  background-color: white;
-  float: left;
-  width: 20%;
+#shopping {
+  padding-top: 5px;
+  width: 23%;
   justify-content: center;
-  text-align: center; 
-}
-.productImage {
-  height: 180px;
-  width: 80%;
-}
-p {
-  height: 5px;
-}
-a{
-    width: 20%;
-    justify-content: center;
-    text-align: center;
-}
-.ancher:hover{
-    color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
 }

@@ -1,6 +1,6 @@
 .highlight {
   display: flex;
-  padding-top: 20px;
+  padding: 20px;
   border-color: black;
 }
 .row{
@@ -27,13 +27,13 @@
 .images{
     padding-top: 20px;
     width: 40%;
-    border: 2px solid darkgray;
+    border: 1px solid darkgray;
 }
 button{
     background-color: ;
 }
 .mainImage{
-    border: 2px solid grey;
+    border: 1px solid grey;
     width: 280px;
     height: 280px;
 }
@@ -41,7 +41,7 @@ button{
     overflow: auto;
     width: 90px;
     height: 280px;
-    border: 2px solid grey;
+    border: 1px solid grey;
 }
 img{
     width: 70px;
@@ -63,5 +63,5 @@ img{
 .view-content img {
     width: 180px;
     height: 180px;
-    border: 2px solid grey;
+    border: 1px solid grey;
 }
