@@ -14,17 +14,18 @@
 }
 .back1pic{
   background-image: url("../images/bike.jpg");
+  height: 700px;
 }
 .back2pic{
   background-image: url("../images/aston-martin-7680x4320-15525.jpg");
-  width: 80%;
+  width: 90%;
+  height:480px;
 }
 .back1 {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 700px;
 }
 .icon::after {
   content: "";
@@ -37,7 +38,7 @@
   opacity: 0.5;
 }
 .imagetext{
-  position: absolute;
+  position: relative;
     color: white;
     z-index: 4;
 }
