@@ -12,9 +12,15 @@
   background-color: rgba(47, 122, 133, 0.5);
   font-family: Arial, sans-serif;
 }
+.back1pic{
+  background-image: url("../images/bike.jpg");
+}
+.back2pic{
+  background-image: url("../images/aston-martin-7680x4320-15525.jpg");
+  width: 80%;
+}
 .back1 {
   position: relative;
-  background-image: url("../images/bike.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
